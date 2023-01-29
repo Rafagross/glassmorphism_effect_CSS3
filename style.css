@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(213, 77%, 14%, 1) 0%,
+    hsla(202, 27%, 45%, 1) 100%
+  );
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .mainDivision {
+  width: 70vh;
+  height: 70vh;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+}
+
+.container .mainDivision form {
+  width: 70vh;
+  height: 70vh;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container .mainDivision form h1 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #1b263b;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.container .mainDivision form .formBox-A {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.container .mainDivision form .formBox-B {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.container .mainDivision form .formBox-A label {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #1b263b;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.container .mainDivision form .formBox-B label {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #1b263b;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.container .mainDivision form .formBox-A .formInput-A {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.336);
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.container .mainDivision form .formBox-B .formInput-B {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.336);
+  box-shadow: 7px 7px 15px 0 rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.container .mainDivision form .btnGroup {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.container .mainDivision form .btnGroup .btnGroup {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #1b263b;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.4);
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.5s;
+}
+
+.container .mainDivision form .btnGroup .btn:hover {
+  background-color: #1b263b;
+}
+
+.container .clip_path_A {
+  width: 20vh;
+  height: 20vh;
+  position: absolute;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(to top left, #240046, #0d1b2a);
+  margin-top: 0;
+  margin-left: 0;
+  opacity: 0.4;
+  animation: looping_1 10s ease 0s infinite;
+}
+
+.container .clip_path_B {
+  width: 20vh;
+  height: 20vh;
+  position: absolute;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(to top left, #c1121f, #ffaa00);
+  margin-top: 0;
+  margin-left: 0;
+  opacity: 0.4;
+  animation: looping_2 10s ease 0s infinite;
+}
+
+@keyframes looping_1 {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  25% {
+    margin-top: -30%;
+    margin-left: 0;
+  }
+  50% {
+    margin-top: -30%;
+    margin-left: -30%;
+  }
+  75% {
+    margin-top: 0;
+    margin-left: -30%;
+  }
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+@keyframes looping_2 {
+  0% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  25% {
+    margin-top: 30%;
+    margin-left: 0;
+  }
+  50% {
+    margin-top: 30%;
+    margin-left: 30%;
+  }
+  75% {
+    margin-top: 0;
+    margin-left: 30%;
+  }
+  100% {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
